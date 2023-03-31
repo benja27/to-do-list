@@ -58,8 +58,6 @@ export default class Tasks {
     localStorage.setItem('tasks', JSON.stringify(local));
     this.listTasks = JSON.parse(localStorage.getItem('tasks'));
     this.show();
-    document.querySelector('#newName').value = '';
-    document.querySelector('.btn-submit').setAttribute('type', 'submit');
   }
 
   delete(index) {
