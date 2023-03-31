@@ -1,7 +1,10 @@
 import './style.css';
+import Tasks from './modules/tasks.js';
 
-import TaskList from './modules/interactive.js';
+const tasks = new Tasks();
 
-const taskList = new TaskList();
+tasks.show();
 
-taskList.displayTasks();
+// setInterval(() => {
+//   location.reload()
+// }, 2000);
