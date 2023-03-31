@@ -1,3 +1,4 @@
+
 import './style.css';
 import Tasks from './modules/tasks.js';
 
@@ -8,3 +9,5 @@ tasks.show();
 // setInterval(() => {
 //   location.reload()
 // }, 2000);
+
+
