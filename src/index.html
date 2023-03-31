@@ -17,19 +17,50 @@
         <i id="reset" class="fas fa-sync fs-4"></i>
       </div>
       <div class="inputBtn d-flex justify-content-between px-4 py-2">
-        <input type="text" id="task-input" placeholder="Add to your list..." class="col-9 p-1">
-        <button type="submit" class="px-2 border-0">Add Task</button>
+        <input type="text" id="task-input" required placeholder="Add to your list..." class="col-9 p-1">
+        <button type="submit" class="px-2 border-0 btn-submit">Add Task</button>
       </div>
 
       <section id="list">  
         
       </section>    
 
+
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <label for="">Edit the Task</label>
+              <input type="text" name="" id="newName">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary save" id="save" data-bs-dismiss="modal">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     </form>
+
+
+
+<!-- Modal -->
+
+
     
     <div class="clear-btn col-7 mx-auto d-flex ">
       <button id="clear-completed" type="button" class="flex-fill py-2 border-0 btn btn-success" >Clear All Completed</button>
     </div>
-
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js'></script>    
 </body>
 </html>
