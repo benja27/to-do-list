@@ -20,7 +20,6 @@ document.querySelector('#task-form').addEventListener('submit',(e) =>{
   document.querySelector("#task-input").value = " "
 })
 
-
 document.querySelector('#list').addEventListener('click',e=>{  
   if(e.target.matches(".edit")){     
     document.querySelector("#add-task").setAttribute("type","button")    
