@@ -2,7 +2,7 @@
 
 <div align="center">
   
-  <h3><b>To Do List README</b></h3>
+  <h3><b>README</b></h3>
 
 </div>
 
@@ -36,11 +36,12 @@
 
 
 
-**[To_Do_List]** is a project that provide user a form. User can fill his/her daily task and remove them when they marked as completed.
+**[To_Do_List]** is a project that helps me to undestand how to use webpack by providing a interface to a user to add and remove tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 HTML
 CSS
+bootstrap
 ES6 Modules
 Webpack
 
@@ -81,7 +82,7 @@ Webpack
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://fpsapc.github.io/To_Do_List)
+- [Live Demo Link](https://bejewelled-dasik-7a5c9a.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -96,23 +97,11 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
-- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
-- `node` should be installed in your local machine, [node website](https://nodejs.org/en/download/).
-- Install the `npm` package manager use this [to install both node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
-
+clone this repository in your computer.
+run this command "npm install"
+run this command "npm run start"
+enjoy
 ### Setup
-
-Clone this repository to your desired folder or download the Zip folder:
-
-```
-https://github.com/fpsapc/To_Do_List
-```
-
-- Navigate to the location of the folder in your machine:
-
-**``you@your-Pc-name:~$ cd To_Do_List``**
 
 ### Install
 
@@ -130,22 +119,6 @@ To run the project, follow these instructions:
 - Open the `index.html` in your browser.
 - You can also use `npm start` command in terminal to run this at localhost:8080
 
-### Run tests
-
-To run tests, run the following command:
-
-- Track HTML linter errors run:
-```
-npx hint .
-```
-- Track CSS linter errors run:
-```
-npx stylelint "**/*.{css,scss}"
-```
-- Track JavaScript linter errors run:
-```
-npx eslint .
-```
 
 ### Deployment <a name="deployment"></a>
 
@@ -159,11 +132,11 @@ You can deploy this project using: GitHub Pages,
 
 ## 👥 Author <a name="authors"></a>
 
-👤 **Author**
+👤 **Mariano Benjamin**
 
-- GitHub: [@githubhandle](https://github.com/fpsapc/To_Do_List)
-- Twitter: [@twitterhandle](https://twitter.com/salmanahmadkhan)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/salmanahmadkhan1987)
+- GitHub: [@githubhandle](https://github.com/benja27)
+- Twitter: [@twitterhandle](https://twitter.com/@rksne123)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/mariano-benjamin-mendez-garcia-a50856177)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,7 +144,7 @@ You can deploy this project using: GitHub Pages,
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[I will add some images to this project to make it look's more attractive]**
+- [ ] **[I will add better js fuctinality]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,17 +170,10 @@ If you like this project give me a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank web.archive.org. for this to do list format
+I would like to thank Microverse for this coding experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[How this list works]**
-
-  - [add your daily task and click on checkbox for completed task]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
