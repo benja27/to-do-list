@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'>    
      <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/6e8f4ae605.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/7d931a3f92.js" crossorigin="anonymous"></script>
     <title>To Do List</title>
 </head>
-<body class="check" >
+<body class="bg-info pt-5" >
   
-  <h1>Today's To do</h1>
-    <form id="task-form">
-      <div class="today-container">
-        <h2>Today's to do</h2>
-        <i id="reset" class="fas fa-sync"></i>
+  
+    <form id="task-form" class=" mt-5 col-7 mx-auto shadow-lg py-3 bg-light"  >
+      <div class="today-container d-flex justify-content-between align-items-center px-4">
+        <h2 class="m-0 " >Today's to do</h2>
+        <i id="reset" class="fas fa-sync fs-4"></i>
       </div>
-      <div class="inputBtn">
-        <input type="text" id="task-input" placeholder="Add to your list...">
-        <button type="submit">Add Task</button>
+      <div class="inputBtn d-flex justify-content-between px-4 py-2">
+        <input type="text" id="task-input" placeholder="Add to your list..." class="col-9 p-1">
+        <button type="submit" class="px-2 border-0">Add Task</button>
       </div>
-      <ul id="task-list"></ul>    
+
+      <section id="list">  
+        
+      </section>    
+
     </form>
-    <div class="clear-btn">
-      <button id="clear-completed" type="button">Clear All Completed</button>
+    
+    <div class="clear-btn col-7 mx-auto d-flex ">
+      <button id="clear-completed" type="button" class="flex-fill py-2 border-0 btn btn-success" >Clear All Completed</button>
     </div>
+
 </body>
 </html>
