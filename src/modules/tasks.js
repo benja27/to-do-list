@@ -8,6 +8,7 @@ export default class Tasks {
 
   show() {
     document.querySelector('#list').innerHTML = '';
+    this.listTasks = JSON.parse(localStorage.getItem('tasks')) || [];
     this.listTasks.forEach((element) => {
       const container = document.querySelector('#list');
       // MAIN DIV
@@ -15,12 +16,13 @@ export default class Tasks {
       div.setAttribute('data-index', `${element.index}`);
       div.className = 'd-flex justify-content-between px-4 align-items-center taskElement';
       const check = document.createElement('input');
-      check.className = '';
+      check.className = `check  ${element.index} `;
       check.setAttribute('type', 'checkbox');
-      const inputText = document.createElement('input');
-      inputText.setAttribute('type', 'text');
-      inputText.className = `m-0 col-10 border-0 input-txt ${element.index}`;
-      inputText.value = `${element.name}`;
+      // text task
+      const inputText = document.createElement('h4');
+      // inputText.setAttribute('type', 'text');
+      inputText.className = `m-0 col-10 ps-2 input-txt ${element.index}`;
+      inputText.textContent = `${element.name}`;
       const div2 = document.createElement('div');
       const edit = `
       <button type="button" class="fs-6 px-1 border-0 edit pe-2" data-bs-toggle="modal" data-index=${element.index}   data-bs-target="#exampleModal">

@@ -2,9 +2,18 @@
 import './style.css';
 
 import Tasks from './modules/tasks.js';
+import Checkbox from './modules/checkbox.js';
 import { toInteger } from 'lodash';
 
 const tasks = new Tasks();
+const checkbox = new Checkbox()
+
+if(localStorage.getItem('task')){
+  checkbox.test()
+  checkbox.clean()
+}
+
+
 let index;
 
 document.querySelector('#task-form').addEventListener('submit',(e) =>{
@@ -34,7 +43,18 @@ document.querySelector('#list').addEventListener('click',e=>{
     let index = toInteger(e.srcElement.getAttribute("data-index"))    
     tasks.delete(index)
   }
+
+  if(e.target.matches(".check")){
+    checkbox.test()    
+  }  
 })
+
+document.querySelector("#clear-completed").addEventListener("click",e=>{
+  checkbox.clean()
+  tasks.update()
+  tasks.show()
+})
+
 
 document.querySelector("#task-input").addEventListener('click',e=>{
   document.querySelector('#add-task').setAttribute('type', 'submit');
